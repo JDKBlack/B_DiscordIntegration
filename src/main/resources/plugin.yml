@@ -1,7 +1,7 @@
 name: B_DiscordIntegration
 version: '${project.version}'
 main: me.black.b_discordintegration.B_DiscordIntegration
-api-version: 1.15
+api-version: 1.18
 authors: [ Black_ ]
 description: Basic Discord integration plugin
 website: https://github.com/JDKBlack
