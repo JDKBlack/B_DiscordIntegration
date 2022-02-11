@@ -25,5 +25,3 @@ webhookURL: "https://discord.com/api/webhooks/XXXXXX"
 
 ### YOUTUBE VIDEO: https://youtu.be/lyu4-__NW44
 
-![image](https://i9.ytimg.com/vi_webp/lyu4-__NW44/mqdefault.webp?v=62069941&sqp=CPC-mpAG&rs=AOn4CLD_O5rjboVyHMRxnMu9fEd5kTxfFQ "Image") 
-
