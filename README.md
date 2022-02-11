@@ -17,3 +17,11 @@ This plugin integrate your minecraft server with discord webhook
 - Edit config file in B_DiscordIntegration folder using your webhook URL in **webhookURL: ""** and restart the server 
 - Plugin is ready to use!
 
+# CONFIG FILE
+```
+#REPLACE USING YOUR WEBHOOK URL
+webhookURL: "https://discord.com/api/webhooks/XXXXXX"
+```
+
+### YOUTUBE VIDEO: https://youtu.be/lyu4-__NW44
+
