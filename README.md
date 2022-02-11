@@ -18,7 +18,7 @@ This plugin integrate your minecraft server with discord webhook
 - Plugin is ready to use!
 
 # CONFIG FILE
-```
+```ruby
 #REPLACE USING YOUR WEBHOOK URL
 webhookURL: "https://discord.com/api/webhooks/XXXXXX"
 ```
