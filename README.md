@@ -20,7 +20,13 @@ This plugin integrate your minecraft server with discord webhook
 # CONFIG FILE
 ```ruby
 #REPLACE USING YOUR WEBHOOK URL
+
 webhookURL: "https://discord.com/api/webhooks/XXXXXX"
+
+serverenable: "Server was enabled"
+serverdisable: "Server was disabled"
+#USE %plaeyr% to display name
+diemessage: "%player% dies!"
 ```
 
 ### YOUTUBE VIDEO: https://youtu.be/lyu4-__NW44
