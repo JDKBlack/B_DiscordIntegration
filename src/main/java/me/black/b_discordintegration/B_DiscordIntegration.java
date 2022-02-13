@@ -26,7 +26,7 @@ public final class B_DiscordIntegration extends JavaPlugin implements Listener {
         Discord webhook = new Discord(getConfig().getString("webhookURL"));
         webhook.addEmbed(new Discord.EmbedObject()
                 .setColor(java.awt.Color.GREEN)
-                .setDescription("Server was enabled! :wolf:"));
+                .setDescription(getConfig().getString("serverenable")));
         try {
             webhook.execute();
         } catch (java.io.IOException e) {
@@ -48,7 +48,7 @@ public final class B_DiscordIntegration extends JavaPlugin implements Listener {
         Discord webhook = new Discord(getConfig().getString("webhookURL"));
         webhook.addEmbed(new Discord.EmbedObject()
                 .setColor(java.awt.Color.RED)
-                .setDescription("Server was disabled! :wolf:"));
+                .setDescription(getConfig().getString("serverdisable")));
         try {
             webhook.execute();
         } catch (java.io.IOException e) {
@@ -75,10 +75,13 @@ public final class B_DiscordIntegration extends JavaPlugin implements Listener {
     @EventHandler
     //DEATH MESSAGE
     public void DCdeath(PlayerDeathEvent e) {
+
+        Player p = e.getEntity().getPlayer();
+
         Discord webhook = new Discord(getConfig().getString("webhookURL"));
         webhook.addEmbed(new Discord.EmbedObject()
                 .setColor(java.awt.Color.YELLOW)
-                .setDescription(":crossed_swords: **" + e.getEntity().getPlayer().getName() + "** die!")
+                .setDescription(getConfig().getString("diemessage").replace("%player%", p.getName()))
         );
         try {
             webhook.execute();
